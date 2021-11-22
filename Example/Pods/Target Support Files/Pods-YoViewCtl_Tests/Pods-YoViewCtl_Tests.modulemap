@@ -1,0 +1,6 @@
+framework module Pods_YoViewCtl_Tests {
+  umbrella header "Pods-YoViewCtl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

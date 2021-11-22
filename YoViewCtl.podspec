@@ -30,13 +30,38 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'YoViewCtl/Classes/**/*'
+#  s.source_files = 'YoViewCtl/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YoViewCtl' => ['YoViewCtl/Assets/*.png']
   # }
-
+#  s.resources = 'YoViewCtl/Assets/YoViewCtlBundle.bundle'
+#  s.dependency 'YoNavBarView' # 自定义导航view
+#  s.dependency 'SnapKit' # 布局用
+#  s.dependency 'YoCommon/Define' # 共有类
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  # 单图查看  注意图片加载 子模块里
+#  s.subspec 'Accessory' do |ss|
+#    ss.source_files = 'YoPhotoBrowser/Classes/Accessory/**/*'
+#    # 排除其他子模块的文件
+#    # ss.exclude_files = 'Sources/Classes/Core/**/*'
+#    ss.dependency 'YoPhotoBrowser/Core'
+#    ss.dependency 'SDWebImage'
+#    ss.resources = 'YoPhotoBrowser/Assets/YoPhotoBrowserBundle.bundle'
+#  end
+   # 核心库  公有类模块+功能子模块=单图产看+多图查看等
+   s.subspec 'Core' do |ss|
+       ss.source_files = 'YoViewCtl/Classes/Core/**/*'
+#       ss.resources = 'YoViewCtl/Assets/YoViewCtlBundle.bundle'
+       ss.resources = 'YoViewCtl/Assets/**/*'
+       ss.dependency 'YoNavBarView' # 自定义导航view
+       ss.dependency 'SnapKit' # 布局用
+       ss.dependency 'YoCommon/Define' # 共有类
+  end
+
+  s.default_subspec = 'Core'
+  
 end

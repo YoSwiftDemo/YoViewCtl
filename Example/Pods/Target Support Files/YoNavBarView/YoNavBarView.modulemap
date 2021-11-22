@@ -1,0 +1,6 @@
+framework module YoNavBarView {
+  umbrella header "YoNavBarView-umbrella.h"
+
+  export *
+  module * { export * }
+}

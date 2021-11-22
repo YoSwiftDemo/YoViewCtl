@@ -1,0 +1,33 @@
+PODS:
+  - SnapKit (4.2.0)
+  - YoCommon/Define (0.1.0)
+  - YoNavBarView (0.1.2)
+  - YoViewCtl (0.1.0):
+    - YoViewCtl/Core (= 0.1.0)
+  - YoViewCtl/Core (0.1.0):
+    - SnapKit
+    - YoCommon/Define
+    - YoNavBarView
+
+DEPENDENCIES:
+  - YoViewCtl (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - YoCommon
+    - YoNavBarView
+
+EXTERNAL SOURCES:
+  YoViewCtl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YoCommon: d3505a77a1bf9cf398b5213645e071d7a4bdf83d
+  YoNavBarView: 2325498a7752ff5e44af244f1ae087d0a2def578
+  YoViewCtl: 844f39b0a1fbdafadd8c5a20223c4eef1c0d84c6
+
+PODFILE CHECKSUM: a11ee15d0d867271932a14352737854fecd7524d
+
+COCOAPODS: 1.11.2

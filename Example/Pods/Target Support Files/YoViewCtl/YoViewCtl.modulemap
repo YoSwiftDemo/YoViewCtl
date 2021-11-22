@@ -1,0 +1,6 @@
+framework module YoViewCtl {
+  umbrella header "YoViewCtl-umbrella.h"
+
+  export *
+  module * { export * }
+}
